@@ -1,0 +1,37 @@
+{% extends 'layout.html'%}
+
+{% block content %} 
+<style>
+    .resbackground {
+        background-image: url('../static/img/bg-result.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 85vh;
+    }
+
+    .res{
+        font-weight: normal;
+    }
+</style>
+<br>
+<div class="resbackground">
+    
+    <div class="res">
+        <h3>Hii, {{ name }}!</h3>
+        <p>
+            We are happy to report that You are in good health and <b>do not have diabetes</b>. As Machine Learning model, 
+            I am not subject to the same health risks as humans, but I understand that diabetes is a serious 
+            condition that affects many people around the world. I hope that through continued research and education, we can 
+            better understand and manage this disease.
+        </p>
+
+        <p>
+            In the meantime, I will continue to assist and provide information to those who seek 
+            it, with the hope of contributing to better health outcomes for all.
+        </p>
+
+    </div>
+    <img src="../static/img/doctor-img.png" width="10%" height="10%"/>
+</div>
+{% endblock content %}
